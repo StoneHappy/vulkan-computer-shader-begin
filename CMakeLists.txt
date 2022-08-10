@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.19 FATAL_ERROR)
 
-project(AppName VERSION 0.1.0)
+project(vulkan-computer-shader-begin VERSION 0.1.0)
 
 
 option(ENABLE_TEST "Enable google test" OFF)
@@ -17,6 +17,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include(cmake/tools.cmake)
+include(cmake/ShaderCompile.cmake)
 
 # ---- Include guards ----
 if(PROJECT_SOURCE_DIR STREQUAL PROJECT_BINARY_DIR)
